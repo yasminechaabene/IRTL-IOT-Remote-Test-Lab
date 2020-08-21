@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="tn.esprit.mhaf.Depart.LoginActivity"
+    android:weightSum="2">
+
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/LinearLayout"
+        android:layout_marginBottom="28dp"
+        android:layout_weight="0.67"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/logosplash"
+            android:layout_width="wrap_content"
+            android:layout_height="157dp"
+
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/irtl" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="11dp"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:weightSum="2">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="IOT Remote Test Lab"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:fontFamily="serif"
+            android:text="Username:"
+
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="@color/colorWhite"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter Your Username"
+            android:paddingStart="5dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:text="Password:"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorWhite"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_btn"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#1B9D9C"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout >

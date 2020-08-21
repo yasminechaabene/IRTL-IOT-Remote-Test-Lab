@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="tn.esprit.mhaf.Menu.ChatBot.ChatBot">
+
+
+    <ImageView
+        android:id="@+id/logosplash"
+        android:layout_height="200sp"
+        android:layout_width="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/irtl"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/user_input_container">
+
+
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+        <EditText
+            android:id="@+id/user_input"
+            android:layout_width="293dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="@color/colorWhite"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingStart="5dp"
+            android:layout_gravity="center"
+
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/input_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_btn"
+            android:text="Done"
+            android:layout_gravity="right"
+            android:textAllCaps="false"
+            android:textColor="#1B9D9C"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.design.widget.TextInputLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/user_input_container">
+
+        <TextView
+            android:id="@+id/conversation"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+    </ScrollView>
+</LinearLayout>

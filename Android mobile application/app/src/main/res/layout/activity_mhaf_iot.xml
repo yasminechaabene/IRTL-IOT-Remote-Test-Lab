@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:background="@drawable/bg"
+    tools:context="tn.esprit.mhaf.Menu.MhafIOT">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/mhafiot"
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IRTL"
+          android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:id="@+id/desc"
+
+        android:layout_below="@+id/mhafiot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text=" IRTL is an IOT  platform that simplifies the interconnection of all your devices.
+It makes you able to guaranty the communication between different electronic cards.
+
+In fact,the main purpose of this platform is to collect and exchange the huge amount of data from the different devices and turn them into actionable insights and  meanful services.
+Thanks to IRTL you will not only be able to just simply  collect  data but also it will be analyzed.
+
+In addition to this you will benefet with some helpful predictions that costs a lot nowaday to do some wanted actions for chosen goals.
+you can even create your own systems without writing any line of code.
+
+But what if you a buiguiner in the iot field  you can use our  code generater feature in order to try some actions  where buiguiners can also learn  and benefets from the platform.
+
+Finally IRTL is so simple. it saves money,time and efforts."/>
+
+    <VideoView
+        android:id="@+id/videoView"
+android:layout_marginTop="50dp"
+        android:layout_below="@+id/desc"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc"
+            android:text="Reload"
+            android:textStyle="italic"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/clicklogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc"
+            android:text="Logout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignLeft="@id/button1"
+            android:layout_marginRight="15dp"
+            android:textStyle="italic"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+</ScrollView>

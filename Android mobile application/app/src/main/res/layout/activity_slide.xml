@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="tn.esprit.mhaf.Depart.SlideActivity"
+    android:weightSum="1">
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:id="@+id/slideviewPager"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/hgu"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0.80"
+        android:layout_alignParentRight="true">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dotslayout"
+        android:layout_width="75dp"
+        android:layout_height="50sp"
+        android:layout_marginLeft="150dp"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/prev_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"
+            android:text="BACK"
+            android:textColor="@color/colorWhite"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:background="@android:color/transparent"
+            android:text="NEXT"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</LinearLayout>

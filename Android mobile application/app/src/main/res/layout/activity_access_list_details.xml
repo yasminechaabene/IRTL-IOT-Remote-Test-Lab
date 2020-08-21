@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="tn.esprit.mhaf.Menu.Details.AccessListDetailsActivity">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:text="Access Control Details"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/access_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:textSize="25dp"
+        android:text="access_name"
+        />
+    <TextView
+        android:id="@+id/access_desc"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:textSize="25dp"
+        android:layout_height="wrap_content"
+        android:text="access_desc"
+        />
+    <TextView
+        android:id="@+id/access_type"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_height="wrap_content"
+        android:text="access_type"
+        />
+
+</LinearLayout>
