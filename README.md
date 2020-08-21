@@ -4,5 +4,4 @@ Web : RectJS
 Mobile application : Android (java)
 Database : mongodb using nodeJS
 
-![logo](https://user-images.githubusercontent.com/44651085/90853060-013ff600-e371-11ea-9384-62ad5049ee1f.png)
-
+![pinterest_profile_image](https://user-images.githubusercontent.com/44651085/90853196-4e23cc80-e371-11ea-9d76-e9005f7e42c1.png)
