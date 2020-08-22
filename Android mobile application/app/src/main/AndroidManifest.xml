@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tn.esprit.mhaf">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Depart.LoginActivity" />
+        <activity android:name=".Depart.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Menu.HomeDashboard" />
+        <activity android:name=".Menu.Lists.DataTypeActivity" />
+        <activity android:name=".Menu.Lists.DataGroupActivity" />
+        <activity android:name=".Menu.Lists.TemplateActivity" />
+        <activity android:name=".Menu.Lists.DevicesActivity" />
+        <activity android:name=".Menu.Charts.ChartsActivity" />
+        <activity android:name=".Menu.PredictionsActivity" />
+        <activity android:name=".Menu.PreventionsActivity" />
+        <activity android:name=".Menu.Lists.AccessListActivity" />
+        <activity android:name=".Menu.Lists.ConnectedDevicesActivity" />
+        <activity android:name=".Depart.SlideActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Menu.Map.MapActivity" />
+        <activity android:name=".Menu.ChatBot.ChatBot" />
+        <activity android:name=".Menu.Notifications.NotificationActivity" />
+        <activity android:name=".Menu.NewsActivity" />
+        <activity android:name=".Menu.MhafIOT" />
+        <activity android:name=".Menu.Details.DataTypeDetailsActivity" />
+        <activity android:name=".Menu.Details.DataGroupDetailsActivity" />
+        <activity android:name=".Menu.Details.TemplateDetailsActivity" />
+        <activity android:name=".Menu.Details.DevicesDetailsActivity" />
+        <activity android:name=".Menu.Details.ConnectedDevicesDetailsActivity" />
+        <activity android:name=".Menu.Details.AccessListDetailsActivity" />
+        <activity android:name=".Menu.Charts.LineChartsActivity"></activity>
+    </application>
+
+</manifest>

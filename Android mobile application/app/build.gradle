@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "tn.esprit.mhaf"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        jackOptions {
+            enabled true
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.android.support:cardview-v7:26.+'
+    compile 'com.ibm.watson.developer_cloud:java-sdk:3.7.2'
+    compile 'com.ibm.watson.developer_cloud:text-to-speech:3.5.3'
+    compile 'com.ibm.watson.developer_cloud:android-sdk:0.2.1'
+    compile 'com.github.kittinunf.fuel:fuel-android:1.9.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.github.kittinunf.fuel:fuel-android:1.9.0'
+    compile 'com.google.android.gms:play-services-maps:8.3.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    compile 'com.microsoft.projectoxford:vision:1.0.374'
+    compile 'com.itextpdf:itextg:5.5.10'
+    testCompile 'junit:junit:4.12'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

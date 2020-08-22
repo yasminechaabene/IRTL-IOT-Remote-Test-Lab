@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="tn.esprit.mhaf.Menu.Details.DataGroupDetailsActivity">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Data Group Details"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/datagroup_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:textSize="25dp"
+        android:text="datagroup_name"
+        />
+    <TextView
+        android:id="@+id/datagroup_desc"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:textSize="25dp"
+        android:layout_height="wrap_content"
+        android:text="datagroup_desc"
+        />
+    <TextView
+        android:id="@+id/datagroup_action"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_height="wrap_content"
+        android:text="datagroup_action"
+        />
+
+
+    <TextView
+        android:id="@+id/datagroup_dataname_name"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_height="wrap_content"
+        android:text="datagroup_dataname_name"
+        />
+</LinearLayout>
