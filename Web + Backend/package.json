@@ -1,0 +1,24 @@
+{
+  "name": "iot_lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "yosr",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "4.0.0",
+    "body-parser": "1.19.0",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "jsonwebtoken": "8.5.1",
+    "moment": "^2.24.0",
+    "mongodb": "^3.1.6",
+    "mongoose": "^5.2.15",
+    "multer": "^1.4.2",
+    "nodemon": "2.0.2",
+    "uuid": "^7.0.3"
+  }
+}

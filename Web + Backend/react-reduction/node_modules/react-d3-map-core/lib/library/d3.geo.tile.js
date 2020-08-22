@@ -1,0 +1,70 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _d3 = require('d3');
+
+var _d32 = _interopRequireDefault(_d3);
+
+// d3.geo.tile
+
+exports['default'] = function () {
+  var size = [960, 500],
+      scale = 256,
+      translate = [size[0] / 2, size[1] / 2],
+      zoomDelta = 0;
+
+  function tile() {
+    var z = Math.max(Math.log(scale) / Math.LN2 - 8, 0),
+        z0 = Math.round(z + zoomDelta),
+        k = Math.pow(2, z - z0 + 8),
+        origin = [(translate[0] - scale / 2) / k, (translate[1] - scale / 2) / k],
+        tiles = [],
+        cols = _d32['default'].range(Math.floor(-origin[0]), Math.ceil(size[0] / k - origin[0])),
+        rows = _d32['default'].range(Math.floor(-origin[1]), Math.ceil(size[1] / k - origin[1]));
+
+    rows.forEach(function (y) {
+      cols.forEach(function (x) {
+        tiles.push([x, y, z0]);
+      });
+    });
+
+    tiles.translate = origin;
+    tiles.scale = k;
+
+    return tiles;
+  }
+
+  tile.size = function (_) {
+    if (!arguments.length) return size;
+    size = _;
+    return tile;
+  };
+
+  tile.scale = function (_) {
+    if (!arguments.length) return scale;
+    scale = _;
+    return tile;
+  };
+
+  tile.translate = function (_) {
+    if (!arguments.length) return translate;
+    translate = _;
+    return tile;
+  };
+
+  tile.zoomDelta = function (_) {
+    if (!arguments.length) return zoomDelta;
+    zoomDelta = +_;
+    return tile;
+  };
+
+  return tile;
+};
+
+;
+module.exports = exports['default'];
