@@ -29,7 +29,6 @@ Database : mongodb using nodeJS
 ![4](https://user-images.githubusercontent.com/44651085/90911793-63304800-e3d1-11ea-92bf-4a716717e57b.jpg)
 ![8](https://user-images.githubusercontent.com/44651085/90911642-2d8b5f00-e3d1-11ea-8b5e-a76e76328261.jpg)
 
-![background](https://user-images.githubusercontent.com/44651085/90945081-90551880-e41a-11ea-8dca-b02ea30bd919.png)
 
 
 
